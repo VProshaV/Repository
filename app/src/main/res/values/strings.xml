@@ -2,4 +2,7 @@
     <string name="app_name">MyFirstApplication</string>
     <string name="next_activity">Next activity</string>
     <string name="hello">Hello</string>
+    <string name="cats">Cats</string>
+    <string name="dogs">Dogs</string>
+    <string name="birds">Birds</string>
 </resources>

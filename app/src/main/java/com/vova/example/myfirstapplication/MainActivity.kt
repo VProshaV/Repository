@@ -1,6 +1,7 @@
 package com.vova.example.myfirstapplication
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -16,10 +17,10 @@ class MainActivity : AppCompatActivity() {
         nextActivityButton = findViewById(R.id.next_activity_button)
 
         nextActivityButton.setOnClickListener {
-           val secondActivityIntent:Intent = Intent(this, SecondActivity::class.java)
-           secondActivityIntent.putExtra(HELLO_KEY,"Hello from MainActivity")
-
-            startActivity(secondActivityIntent)
+            val googlelink = Uri.parse("https://google.com")
+            val openBrowserIntent = Intent(Intent.ACTION_VIEW,googlelink)
+            val chooser = Intent.createChooser(openBrowserIntent,"Browser")
+            startActivity(chooser)
         }
     }
 }
