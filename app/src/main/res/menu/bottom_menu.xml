@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/aboutMe"
+        android:icon="@drawable/me_baseline_sentiment_satisfied_alt_24"
+        android:title ="@string/about_me"/>
+    <item
+        android:id="@+id/myWorks"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title ="@string/my_works"/>
+
+</menu>

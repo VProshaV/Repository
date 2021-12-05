@@ -1,0 +1,108 @@
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_main.xml b/app/src/main/res/layout/activity_main.xml
+--- a/app/src/main/res/layout/activity_main.xml	(date 1638728746156)
++++ b/app/src/main/res/layout/activity_main.xml	(date 1638728746156)
+@@ -6,25 +6,28 @@
+     android:layout_height="match_parent"
+     tools:context=".MainActivity">
+ 
+-    <ImageView
+-
+-        android:id="@+id/imageView"
++    <TextView
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="Hello !"
++        app:layout_constraintLeft_toLeftOf="parent"
++        app:layout_constraintRight_toRightOf="parent"
++        app:layout_constraintTop_toTopOf="parent"/>
++    <Button
++        android:id="@+id/next_activity_button"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+-        android:src="@drawable/me"
+-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
++        android:text="@string/next_activity"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        android:contentDescription="TODO" />
+-
+-    <com.google.android.material.bottomnavigation.BottomNavigationView
+-        android:id="@+id/bottomNavigationView"
++        app:layout_constraintBottom_toBottomOf="parent"/>
++    <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
++        android:text="Bye"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:menu="@menu/bottom_menu" />
+-
++        app:layout_constraintStart_toStartOf="parent"/>
+ 
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_second.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_second.xml b/app/src/main/res/layout/activity_second.xml
+--- a/app/src/main/res/layout/activity_second.xml	(date 1638728746131)
++++ b/app/src/main/res/layout/activity_second.xml	(date 1638728746131)
+@@ -6,24 +6,12 @@
+     android:layout_height="match_parent"
+     tools:context=".SecondActivity">
+     <TextView
+-        android:id="@+id/hello_text_view"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
++        android:text="@string/hello"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+-    <Button
+-        android:id="@+id/next_activity_button"
+-        android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
+-        android:text="@string/next_activity"
+-        app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintBottom_toBottomOf="parent"/>
+-
+-
+-
+ 
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/fragment_about_me.xml
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_about_me.xml b/app/src/main/res/layout/fragment_about_me.xml
+deleted file mode 100644
+--- a/app/src/main/res/layout/fragment_about_me.xml	(date 0)
++++ /dev/null	(date 0)
+@@ -1,14 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    android:layout_width="match_parent"
+-    android:layout_height="match_parent"
+-    tools:context=".AboutMeFragment">
+-
+-    <!-- TODO: Update blank fragment layout -->
+-    <TextView
+-        android:layout_width="match_parent"
+-        android:layout_height="match_parent"
+-        android:text="@string/hello_blank_fragment" />
+-
+-</FrameLayout>
+\ No newline at end of file

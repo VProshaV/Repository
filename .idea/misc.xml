@@ -3,12 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/myapplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.190625" />
+        <entry key="..\:/myapplication/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.18055555555555555" />
+        <entry key="..\:/myapplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.190625" />
+        <entry key="..\:/myapplication/app/src/main/res/drawable/me_baseline_sentiment_satisfied_alt_24.xml" value="0.190625" />
         <entry key="..\:/myapplication/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/myapplication/app/src/main/res/layout/activity_new.xml" value="0.18958333333333333" />
         <entry key="..\:/myapplication/app/src/main/res/layout/activity_next.xml" value="0.18958333333333333" />
         <entry key="..\:/myapplication/app/src/main/res/layout/activity_nextgen.xml" value="0.17552083333333332" />
         <entry key="..\:/myapplication/app/src/main/res/layout/activity_second.xml" value="0.20520833333333333" />
         <entry key="..\:/myapplication/app/src/main/res/layout/activity_vova.xml" value="0.1859375" />
+        <entry key="..\:/myapplication/app/src/main/res/layout/fragment_about.xml" value="0.17447916666666666" />
+        <entry key="..\:/myapplication/app/src/main/res/layout/fragment_about_me.xml" value="0.17447916666666666" />
+        <entry key="..\:/myapplication/app/src/main/res/layout/fragment_my_works.xml" value="0.23125" />
+        <entry key="..\:/myapplication/app/src/main/res/menu/bottom_menu.xml" value="0.17447916666666666" />
       </map>
     </option>
   </component>

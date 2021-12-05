@@ -5,22 +5,36 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-
-private const val HELLO_KEY = "Hello"
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
-    lateinit var nextActivityButton: Button
+    lateinit var bottomNavigationView: BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        nextActivityButton = findViewById(R.id.next_activity_button)
-
-        nextActivityButton.setOnClickListener {
-            val googlelink = Uri.parse("https://google.com")
-            val openBrowserIntent = Intent(Intent.ACTION_VIEW,googlelink)
-            val chooser = Intent.createChooser(openBrowserIntent,"Browser")
-            startActivity(chooser)
+        bottomNavigationView = findViewById(R.id.bottom_navigation)
+        bottomNavigationView.setOnItemSelectedListener { item ->
+            var fragment: Fragment? = null
+            when (item.itemId) {
+                R.id.aboutMe -> {
+                    fragment = aboutFragment()
+                }
+                R.id.myWorks -> {
+                    fragment = myWorksFragment()
+                }
+            }
+            replaceFragment(fragment!!)
+            true
         }
+        bottomNavigationView.selectedItemId= R.id.myWorks
+    }
+
+    fun replaceFragment(fragment:Fragment){
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragment_container,fragment)
+            .commit()
     }
 }

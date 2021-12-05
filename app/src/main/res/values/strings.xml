@@ -5,4 +5,12 @@
     <string name="cats">Cats</string>
     <string name="dogs">Dogs</string>
     <string name="birds">Birds</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aboutme">aboutMe</string>
+    <string name="aboutMe" />
+    <string name="myWorks" />
+    <string name="my_works">My Works</string>
+    <string name="about_me">about me</string>
+    <string name="developers">Developers:</string>
 </resources>
