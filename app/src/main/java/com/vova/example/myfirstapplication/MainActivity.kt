@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
+
 class MainActivity : AppCompatActivity() {
     lateinit var bottomNavigationView: BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {

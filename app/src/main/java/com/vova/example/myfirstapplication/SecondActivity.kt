@@ -1,13 +1,13 @@
 package com.vova.example.myfirstapplication
 
 import android.content.Intent
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
 
-class SecondActivityActivity : AppCompatActivity() {
+private const val HELLO_KEY = "Hello"
+
+class SecondActivity : AppCompatActivity() {
     lateinit var nextActivityButton: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,10 +16,11 @@ class SecondActivityActivity : AppCompatActivity() {
         nextActivityButton = findViewById(R.id.next_activity_button)
 
         nextActivityButton.setOnClickListener {
-            val googlelink = Uri.parse("https://jsfiddle.net/sejwkcp5/1/")
-            val openBrowserIntent = Intent(Intent.ACTION_VIEW,googlelink)
-            val chooser = Intent.createChooser(openBrowserIntent,"Browser")
-            startActivity(chooser)
+            val secondActivityIntent:Intent = Intent(this, thirdActivity::class.java)
+            secondActivityIntent.putExtra(HELLO_KEY,"Hello from MainActivity")
+
+            val thirdActivityinent = null
+            startActivity(thirdActivityinent)
         }
     }
 }

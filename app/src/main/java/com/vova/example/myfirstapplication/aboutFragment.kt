@@ -9,7 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
-import com.vova.example.myfirstapplication.R.id.next_activity_button
+
+
 
 class aboutFragment : Fragment() {
     lateinit var diceImageView: ImageView
